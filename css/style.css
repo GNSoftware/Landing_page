@@ -8,13 +8,13 @@
 body {
 
         width: 100%;
-      font-family: Roboto, Bold;
+        font-family: 'Poppins', sans-serif;
      
       background-color: white;
     }
     
     h1 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
       margin: 20px 0;
     }
@@ -30,11 +30,165 @@ body {
     }
     
     nav a {
-      color: black;
+      color: rgb(107, 107, 107);
       text-decoration: none;
       margin: 0 10px;
       display: block;
+      font-weight: bold;
     }
+
+    nav p {
+      color: rgb(107, 107, 107);
+      text-decoration: none;
+      margin: 0 10px;
+      display: block;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav h1 {
+     
+      
+      margin: 0 10px;
+     font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 22px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      color: #0056A0;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease, font-size 0.3s ease;
+  }
+
+  .whatsapp-btn {
+
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1EBE5D;
+}
+
+
+/* Estilização do botão flutuante */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  font-size: 32px;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1EBE5D;
+}
+
+/* Estilização do pop-up */
+.whatsapp-popup {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+.whatsapp-header {
+  background: #25D366;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatsapp-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.whatsapp-body {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.whatsapp-body img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.whatsapp-text {
+  margin-left: 10px;
+}
+
+.whatsapp-text p {
+  font-size: 12px;
+  color: gray;
+}
+
+.whatsapp-text strong {
+  font-size: 14px;
+}
+
+  
     
     .menu-icon {
       display: none;
@@ -92,13 +246,14 @@ gap: 25px;
 .textPadraoG{
 
 font-size: 45px;
-font-weight: bold;
+font-weight: normal;
 color: black;
 }
 
 .imagemG{
 
 width: 650px;   
+margin-top: 20px;
 }
 
 .informacoes{
@@ -109,7 +264,11 @@ width: 650px;
     justify-content: center;
     flex-direction: column;
     margin-top: 25px;
-    background-color: #cccccc13;
+    /* background-color: #cccccc13; */
+    background-color: white;
+    border-top: 0.7px solid #11111131;
+    border-bottom: 0.7px solid #11111131;
+
 }
 
 .informacoes2{
@@ -137,7 +296,7 @@ width: 650px;
 
 .boxDesc{
 
-width: 30%;
+height: 610px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -215,7 +374,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction:column;
-background-color: #f3f6ff;
+background-color: #cccccc53;
 }
 
 .containerFooter{
@@ -232,6 +391,7 @@ flex-direction: row;
 .boxFooter{
 
     width: 50%;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,6 +541,8 @@ nav a {
   display: block;
   margin: 10px 0;
 }
+
+
 
 .footer{
 
