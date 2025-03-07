@@ -6,20 +6,53 @@
   <title>GN SOFTWARE: Gestão Educacional Inteligente</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Open+Sans:400,400i,700|Montserrat:400,700|Lato:400,400i,700|Roboto+Slab:400,700|Nunito:400,700|Source+Sans+Pro:400,400i,700|PT+Sans:400,400i,700|Raleway:400,400i,700|Merriweather:400,400i,700&display=swap">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="icon" type="image/png" href="./img/logo.png">
+  <link rel="icon" type="image/png" href="./img/logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 <body>
+
+    <div class="whatsapp-container">
+        <div class="whatsapp-popup">
+            <div class="whatsapp-header">
+                <span>Olá! Envie sua mensagem e entraremos em contato o mais breve possível.</span>
+                <button class="whatsapp-close">&times;</button>
+            </div>
+            <div class="whatsapp-body">
+                <img src="./img/logo.jpeg" alt="Logo Edutec">
+                <div class="whatsapp-text">
+                    <p>De segunda a sexta - 9h às 18h</p>
+                    <strong>GN SOFTWARE - Tecnologia e Educação</strong>
+                </div>
+            </div>
+        </div>
+        <a href="https://wa.me/5581993344030" target="_blank" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    
  
   
   <nav>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
-      <a href="#home" class="logo">GN <span style="color: rgb(199, 199, 0);">Software</span></a>
+      <p onclick="recarregar()" href="#home" class="logo">GN <span style="color: rgb(199, 199, 0);">Software</span></p>
       <a href="#home">Home</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
       <a href="#funcionalidade">Soluções</a>
+      <h1 style="background-color: #003355; color: white;cursor: pointer;" onclick="window.open('https://wa.me/5581993344030', '_blank')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
+        </svg>
+        Solicite uma Demonstração
+    </h1>
+    
 
+        
+     
     </div>
     
   </nav>
@@ -29,12 +62,18 @@
     
     <div class="boxApresentacao">
 
-        <div class="box">
-            <h1 class="textPadraoG">Descubra como a GN Software pode ajudar a manter uma gestão eficiente e intuitiva</h1>
+        <div class="box" style="margin-top: 30px;">
+            <h1 class="textPadraoG"> <span style="color: #0056A0 ;font-weight: bold;">Bem-vindo à GN SOFTWARE</span> Veja como podemos ajudar a sua instituição a ter uma gestão eficiente e intuitiva</h1>
             <p>Você quer facilitar a sua gestão escolar?</p>
             <p>Nosso sistema de gestão educacional é uma solução abrangente e eficiente para atender às necessidades específicas de instituições de ensino. Desenvolvido com tecnologia de ponta, nosso sistema oferece uma variedade de recursos projetados para simplificar e otimizar os processos administrativos e acadêmicos de sua escola.</p>
            <h1 class="textopadrao">A GN Software é para gestores inovadores, como você.</h1>
+           <!-- <a href="https://wa.me/5581993344030" target="_blank" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i> Fale Conosco
+        </a> -->
+        
+        
         </div>
+        
 
         <div class="box">
            <img class="imagemG" src="./img/fotoSite.png">
@@ -42,239 +81,184 @@
 
     </div>
 
-    <div class="informacoes" id="funcionalidade">
+    
 
-        <h1 class="textopadrao">Conheça algumas das nossas soluções</h1>
+    <div class="informacoes" id="funcionalidade" style="padding: 20px; font-family: Arial, sans-serif;">
 
-
-        <div class="boxInfor">
-
-            <div class="boxDesc">
-                  <img width="160px" src="./img/54950.png"/>
-                <h1 class="textopadrao">Gestão pedagógica</h1>
-                
-                <h5 class="textopadrao2">
-                    Otimize a gestão dos alunos em sua instituição, garantindo o controle preciso das notas de atividades, média das unidades e anual, alem da frequência escolar e toda a gestão pedagógica, para um acompanhamento acadêmico eficiente. 
-                    
+        <h1 class="textopadrao" style="text-align: center; font-size: 2rem; color: #003355; margin-bottom: 20px;">Conheça algumas das nossas soluções</h1>
+    
+        <div class="boxInfor" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+    
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px;">
+                <img width="160px" src="./img/54950.png" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Gestão pedagógica</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Otimize a gestão dos alunos em sua instituição, garantindo o controle preciso das notas de atividades, média das unidades e anual, além da frequência escolar e toda a gestão pedagógica, para um acompanhamento acadêmico eficiente.🚀
+                </h5>
+            </div>
+    
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px;">
+                <img width="150px" src="./img/note.webp" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">SAE (Sistema de avaliação Escolar)</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Tenha seu próprio SAE na sua instituição, receba relatórios detalhados sobre o desempenho dos alunos, colete informações precisas sobre a capacidade técnica dos estudantes.🚀
+                </h5>
+            </div>
+    
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px;">
+                <img width="150px" src="./img/ead.png" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Aulas Online EAD</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Facilitamos o processo de ensino ao permitir que os professores compartilhem videoaulas diretamente em nossa plataforma, proporcionando uma experiência de aprendizado mais interativa.🚀
+                </h5>
+            </div>
+    
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px;">
+                <img width="170px" src="./img/relatorios.png" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Relatórios Detalhados</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Acesse relatórios detalhados com um clique sobre sua instituição para estabelecer metas e aprimorar resultados. Tenha insights valiosos sobre os alunos, incluindo boletins, frequência escolar e muito mais.🚀
+                </h5>
+            </div>
+    
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px; margin-top: 40px;">
+                <img width="170px" src="./img/mobile.png" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Portal pais e alunos</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Nosso portal oferece aos pais e alunos um acesso fácil e rápido às notas, frequência escolar e situação financeira do aluno, proporcionando total transparência e controle sobre o desempenho acadêmico e as finanças. Além disso, o portal facilita o recebimento de mensagens importantes da escola, garantindo que pais e alunos estejam sempre atualizados sobre eventos, avisos e informações essenciais para o acompanhamento escolar.🚀
+                </h5>
+            </div>
+    
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px; margin-top: 40px;">
+                <img width="200px" src="./img/finaças.png" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Gestão Financeira</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Otimize a gestão financeira da sua instituição com soluções modernas e práticas! O sistema envia automaticamente lembretes de cobranças, emite carnês online, realiza baixa automática nos pagamentos, gera boletos e Pix, e oferece um dashboard financeiro completo, garantindo um controle mais eficiente e ágil.🚀
                 </h5>
             </div>
 
-            <div class="boxDesc">
-                <img width="150px" src="./img/note.webp"/>
-                <h1 class="textopadrao">SAE(Sistema de avaliação Escolar)</h1>
-                <h5 class="textopadrao2">
-                Tenha seu proprio SAE na sua instituição, receba relatorios detalhados sobre o desempenho dos alunos,
-                colete informações precisas sobre a capacidade técnica dos Estudantes. Esses dados são utilizados para monitorar a qualidade da educação, identificar problemas e orientar políticas públicas na área educacional.
-                Tudo 100% online.
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px; margin-top: 40px;">
+                <img width="200px" src="./img/jogoseduc.jpg" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Jogos Educacionais</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Os jogos educacionais do nosso sistema tornam o aprendizado mais divertido e envolvente. Com desafios interativos, as crianças aprendem inglês, matemática, português, finanças, lógica e outros conteúdos de forma lúdica. A integração com inteligência artificial proporciona uma experiência dinâmica, estimulando a compreensão e a prática de novos conceitos.🚀
                 </h5>
-          </div>
+            </div>
 
-          <div class="boxDesc">
-            <img width="150px" src="./img/ead.png"/>
-            <h1 class="textopadrao">Aulas Online EAD</h1>
-            <h5 class="textopadrao2">
-                Facilitamos o processo de ensino ao permitir que os professores compartilhem videoaulas diretamente em nossa plataforma, proporcionando uma experiência de aprendizado mais interativa.
-                Alem de atividades criadas direto na plataforma da Gn software.
-            </h5>
-      </div>
+            <div class="boxDesc" style="width: 300px; text-align: center; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px; margin-top: 40px;">
+                <img width="200px" src="./img/chat-escolar.jpg" style="margin-bottom: 15px;"/>
+                <h1 class="textopadrao" style="font-size: 1.5rem; color: #333;">Chat Escolar</h1>
+                <h5 class="textopadrao2" style="font-size: 1rem; color: #666; line-height: 1.6;">
+                    Nosso sistema de gestão escolar conta com um chat integrado, garantindo uma comunicação direta e segura entre pais, alunos, professores e a secretaria. Com ele, é possível tirar dúvidas, acompanhar o dia a dia escolar e receber comunicados importantes de forma rápida e organizada.
 
-      <div class="boxDesc">
-
-        <img width="170px" src="./img/relatorios.png"/>
-        <h1 class="textopadrao">Relatórios  Detalhados</h1>
-        
-        <h5 class="textopadrao2">
-            Acesse relatórios detalhados com um clique sobre sua instituição para estabelecer metas e aprimorar resultados. Tenha insights valiosos sobre os alunos, incluindo boletins, frequência escolar, registros de observações e muito mais.
-        </h5>
+                    
+                    Facilite o atendimento e mantenha toda a comunidade escolar sempre conectada! 🚀                </h5>
+            </div>
     
+        </div>
     </div>
 
-    <div class="boxDesc">
 
-        <img width="170px" src="./img/mobile.png"/>
-        <h1 class="textopadrao">App para pais e alunos</h1>
-        
-        <h5 class="textopadrao2">
-            Nosso aplicativo oferece aos pais e alunos acesso fácil às notas, frequência escolar e situação financeira do aluno, além de facilitar o recebimento de mensagens importantes da escola. Os pais também podem acompanhar feedbacks diários sobre seus filhos na escola.
-        </h5>
-    
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; background-color: #f5f5f5; padding: 20px; border-radius: 10px;margin-top: 60px;">
+        <div style="width: 100%; max-width: 300px; text-align: left; margin-bottom: 20px; flex: 1;">
+            <h2 style="color: #0056b3; font-weight: bold;">Missão 🚀</h2>
+            <p style="color: #4a4a4a;">Transformar a educação por meio da tecnologia, criando soluções inovadoras que facilitem o aprendizado e a gestão escolar.</p>
+        </div>
+        <div style="width: 100%; max-width: 300px; text-align: left; margin-bottom: 20px; flex: 1;">
+            <h2 style="color: #0056b3; font-weight: bold;">Visão 🚀</h2>
+            <p style="color: #4a4a4a;">Ser referência em tecnologia educacional, promovendo impacto positivo nas instituições de ensino e na formação dos estudantes.</p>
+        </div>
+        <div style="width: 100%; max-width: 300px; text-align: left; flex: 1;">
+            <h2 style="color: #0056b3; font-weight: bold;">Valores 🚀</h2>
+            <p style="color: #4a4a4a;">Inovação, transparência, compromisso com a educação, excelência no atendimento e responsabilidade social.</p>
+        </div>
     </div>
-
-    <div class="boxDesc">
-
-        <img width="200px" src="./img/finaças.png"/>
-        <h1 class="textopadrao">Gestão Financeira</h1>
-        
-        <h5 class="textopadrao2">
-        Otimize a gestão financeira da sua instituição com soluções modernas e práticas! O próprio sistema envia lembretes automáticos de cobranças, emite carnês online e elimina a necessidade de papel, além de gerar boletos e Pix com baixa automática. Tenha acesso a uma dashboard completa para monitorar dados em tempo real e conte com relatórios financeiros detalhados que garantem um controle eficiente e descomplicado. Simplifique o dia a dia da sua instituição com tecnologia inteligente!
-        </h5>
     
-    </div>
-
     
-    </div>
-        
-    </div>
 
-    <div class="informacoes2" id="sobre">
+    <div class="informacoes2" id="sobre" style="font-family: Arial, sans-serif;">
 
-    <h1 class="textopadrao3">PERGUNTAS FREQUENTES SOBRE A GN SOFTWARE</h1>
-
-
-        <div class="opcoes">
-
-            <div class="text1">
-            
-                <h2 style="color:#003355;">
-                    O que é a GN Software?
-                </h2>
+        <h1 class="textopadrao3" style="font-size: 28px; text-align: center; color: #003355; margin-bottom: 30px;">PERGUNTAS FREQUENTES SOBRE A GN SOFTWARE</h1>
     
-                <p style="color:#003355;">
+        <div class="opcoes" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    
+            <div class="text1" style="flex: 1 1 30%; min-width: 300px;">
+    
+                <h2 style="color:#003355; font-size: 20px; margin-bottom: 15px;">O que é a GN Software?</h2>
+    
+                <p style="color:#003355; font-size: 16px; line-height: 1.6;">
                     A GN Software é um sistema especializado em gestão educacional para escolas e cursos de ensino fundamental. Nossos sistemas podem ser acessados por meio de um portal web e aplicativo web. Com planos acessíveis e personalizados, oferecemos soluções para:
                 </p>
     
-                <ul class="ulstyle">
-                    <li>
-                        <p><span style="color: #000000;">Escolas publicas e particulares</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Cursos</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Creches e pré-escolas</span></p>
-                    </li>
-    
-             
-    
-                    <li>
-                        <p><span style="color: #000000;">Centros de treinamento e educação corporativa</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Academias e escolas de esportes</span></p>
-                    </li>
-    
+                <ul class="ulstyle" style="padding-left: 20px; margin-top: 10px;">
+                    <li><p style="color: #000000; font-size: 16px;">Escolas públicas e particulares</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Cursos</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Creches e pré-escolas</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Centros de treinamento e educação corporativa</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Academias e escolas de esportes</p></li>
                 </ul>
     
-                <!-- <p style="color:#003355;">
+                <h2 style="color:#003355; font-size: 20px; margin-top: 20px;">Como funciona a implantação do sistema?</h2>
     
-                 Salas de aula online com interação ao vivo entre professores e alunos, com integração com Youtube.
-                </p> -->
-    
-                <h2 style="color:#003355;">
-                    Como funciona a implantação do sistema?
-                </h2>
-    
-                <p style="color:#003355;">
+                <p style="color:#003355; font-size: 16px; line-height: 1.6;">
                     A implementação do GN Software ocorre em etapas definidas: coleta de dados, treinamento aos educadores e coordenadores, suporte contínuo e garantia de sucesso do cliente. Nossa equipe estará ao seu lado durante todo o processo.
                 </p>
     
             </div>
     
-            <div class="text1">
+            <div class="text1" style="flex: 1 1 30%; min-width: 300px;">
     
-                <h2 style="color:#003355;">
-                   Quais os dados que a sua instituição deve fornecer?
-                </h2>
+                <h2 style="color:#003355; font-size: 20px; margin-bottom: 15px;">Quais os dados que a sua instituição deve fornecer?</h2>
     
-                <p style="color:#003355;">
+                <p style="color:#003355; font-size: 16px; line-height: 1.6;">
                     Para garantir uma implementação bem-sucedida do sistema, é crucial obtermos informações precisas sobre professores, funcionários e dados institucionais, o detalhamento completo de todas as turmas, como quantidade e nomes.
                     Além disso, é importante fornecer informações sobre as políticas e procedimentos da escola.
                     Para instituições de ensino que já possuam um sistema com informações de alunos e funcionários, oferecemos o serviço de migração de dados para o nosso sistema.
                 </p>
     
-                <h2 style="color:#003355;">
-                    A GN Software atende a minha Instituição de Ensino?
-                </h2>
-     
-                 <p style="color:#003355;">
-                    Certamente. O GN Software foi projetado para atender uma ampla gama de instituições educacionais, abrangendo desde escolas de ensino fundamental até instituições de cheches e pre escolas. Sua flexibilidade permite personalização e ajustes precisos para atender às demandas específicas de cada tipo de instituição de ensino."
-                 </p>
+                <h2 style="color:#003355; font-size: 20px; margin-top: 20px;">A GN Software atende a minha Instituição de Ensino?</h2>
     
-                 <h2 style="color:#003355;">
-                    Posso confiar na segurança dos meus dados no GN Software?
-                </h2>
-     
-                 <p style="color:#003355;">
-                    Absolutamente. Seus dados são armazenados na infraestrutura de nuvem do GN Software, que conta com os recursos mais avançados do Brasil e uma equipe especializada para garantir a seguraça dos dados.
-                    Além disso,  implementamos medidas rigorosas de segurança,e backups regulares, garantindo a proteção e a integridade dos seus dados em todos os momentos.
+                <p style="color:#003355; font-size: 16px; line-height: 1.6;">
+                    Certamente. O GN Software foi projetado para atender uma ampla gama de instituições educacionais, abrangendo desde escolas de ensino fundamental até instituições de cheches e pré-escolas. Sua flexibilidade permite personalização e ajustes precisos para atender às demandas específicas de cada tipo de instituição de ensino.
+                </p>
+    
+                <h2 style="color:#003355; font-size: 20px; margin-top: 20px;">Posso confiar na segurança dos meus dados no GN Software?</h2>
+    
+                <p style="color:#003355; font-size: 16px; line-height: 1.6;">
+                    Absolutamente. Seus dados são armazenados na infraestrutura de nuvem do GN Software, que conta com os recursos mais avançados do Brasil e uma equipe especializada para garantir a segurança dos dados.
+                    Além disso, implementamos medidas rigorosas de segurança, e backups regulares, garantindo a proteção e a integridade dos seus dados em todos os momentos.
                 </p>
     
             </div>
     
-            <div class="text1">
+            <div class="text1" style="flex: 1 1 30%; min-width: 300px;">
     
-                <h2 style="color:#003355;">
-                    Soluções que vão levar a sua instituição ao sucesso!
-                 </h2>
+                <h2 style="color:#003355; font-size: 20px; margin-bottom: 15px;">Soluções que vão levar a sua instituição ao sucesso!</h2>
     
-                 <ul class="ulstyle">
+                <ul class="ulstyle" style="padding-left: 20px; margin-top: 10px;">
+                    <li><p style="color: #000000; font-size: 16px;">8X Mais produtividade pedagógica</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">5X + Diminuição de trabalho</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Matrícula em 5 minutos e 100% digital</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Saia do papel e emita documentos em um clique</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Acompanhe a evolução dos alunos</p></li>
+                </ul>
     
-                    <li>
-                        <p><span style="color: #000000;">8X Mais produtividade pedagógica</span></p>
-                    </li>
+                <h2 style="color:#003355; font-size: 20px; margin-top: 20px;">Utilizando o GN Software você vai economizar:</h2>
     
-                    <li>
-                        <p><span style="color: #000000;">5X + Diminuição de trabalho</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Matricula em 5 minutos e 100% digital</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Saia do papel e emita documentos em um clique</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Acompanhe a evolução dos alunos</span></p>
-                    </li>
-    
-                 </ul>
-    
-            </div>
-    
-            <div class="text1">
-                
-    
-                <h2 style="color:#003355;">
-                    Utilizando o GN Software você vai economizar:
-                 </h2>
-    
-                 <ul class="ulstyle">
-    
-                   
-    
-                    <li>
-                        <p><span style="color: #000000;">Menos papeis no dia a dia</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Tempo Administrativo</span></p>
-                    </li>
-    
-                    <li>
-                        <p><span style="color: #000000;">Redução de Erros Administrativos</span></p>
-                    </li>
-
-                    <li>
-                        <p><span style="color: #000000;">Custo de Desenvolvimento de Relatórios</span></p>
-                    </li>
-
-                    <li>
-                        <p><span style="color: #000000;">E muito mais..</span></p>
-                    </li>
-                    
-                    
-                 </ul>
+                <ul class="ulstyle" style="padding-left: 20px; margin-top: 10px;">
+                    <li><p style="color: #000000; font-size: 16px;">Menos papéis no dia a dia</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Tempo administrativo</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Redução de erros administrativos</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">Custo de desenvolvimento de relatórios</p></li>
+                    <li><p style="color: #000000; font-size: 16px;">E muito mais...</p></li>
+                </ul>
     
             </div>
     
         </div>
-      
+    
     </div>
+    
         
 
   </section>
@@ -284,7 +268,7 @@
     <div class="containerFooter" id="contato"> 
 
     <div class="boxFooter">
-        <h1 class="textopadrao">CONTATOS</h1>
+        <h1 class="textopadrao" style="color: #0056A0; border-bottom: 0.8px solid white;font-size: 17px;">CONTATOS</h1>
         
         <div class="email">
             <button style="background-color: transparent; border: none; cursor: pointer;" id="myButton">
@@ -313,28 +297,28 @@
     </div>
 
     <div class="boxFooter">
-        <h1 class="textopadrao">REDES SOCIAIS</h1>
+        <h1 class="textopadrao" style="color: #0056A0;border-bottom: 0.8px solid white; font-size: 17px;">REDES SOCIAIS</h1>
        
         <button style="background-color: transparent; border: none; cursor: pointer;" id="myButton">
             <a style="text-decoration: none" href="https://www.instagram.com/gnsgei/?igsh=MTk5ejI3dTNrbHd3cw%3D%3D&utm_source=qr" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                 </svg>
             </a>            
         </button> 
 
-        <!-- <button style="background-color: transparent; border: none; cursor: pointer;" id="myButton">
+        <button style="background-color: transparent; border: none; cursor: pointer;" id="myButton">
             <a href="https://www.linkedin.com/in/glaudson-nunes-97b60022b/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                   </svg>
             </a>            
-        </button>  -->
+        </button> 
 
     </div>
 
     <div class="boxFooter">
-        <h1 class="textopadrao">LOCALIZAÇÃO</h1>
+        <h1 class="textopadrao" style="color: #0056A0;border-bottom: 0.8px solid white;font-size: 17px;">LOCALIZAÇÃO</h1>
 
         <div class="email">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -351,13 +335,21 @@
         </div> -->
     </div>
 
+    
 </div>
+
     
 <span class="textCopi">© 2024 GN Software. Todos os direitos reservados.</span>
 </footer>
   
   
   <script>
+
+function recarregar(){
+
+location.reload();
+}
+
     function toggleMenu() {
       var menu = document.getElementById("menu");
       menu.classList.toggle("active");
@@ -379,6 +371,31 @@
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const whatsappBtn = document.querySelector(".whatsapp-btn");
+    const whatsappPopup = document.querySelector(".whatsapp-popup");
+    const whatsappClose = document.querySelector(".whatsapp-close");
+
+   
+    whatsappClose.addEventListener("click", function () {
+        whatsappPopup.style.display = "none";
+    });
+
+    // Fechar o popup se clicar fora dele
+    document.addEventListener("click", function (event) {
+        if (!whatsappPopup.contains(event.target) && !whatsappBtn.contains(event.target)) {
+            whatsappPopup.style.display = "none";
+        }
+    });
+});
+
+whatsappBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    whatsappPopup.style.display = "block";
+});
+
 
   </script>
 </body>
